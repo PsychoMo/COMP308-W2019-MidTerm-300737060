@@ -1,4 +1,4 @@
-/**File: app.js
+/**File: index.js
  * Author: Zeyu Ma
  * StudentID: 300737060
  * App Name: COMP308-W2019-MidTerm-300737060 */
