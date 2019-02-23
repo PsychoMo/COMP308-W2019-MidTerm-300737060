@@ -23,7 +23,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <!-- Template Row -->
+                <!-- Populate the cells with books -->
                 <% for (let count = 0; count < books.length; count++) { %>
                 <tr>
                   <td><%= books[count].Title %></td>
@@ -31,6 +31,7 @@
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
 
+                <!-- Populate the cells with Edit and Delete buttons -->
                   <td class="text-center">
                     <a href="/books/<%= books[count]._id %>" class="btn btn-primary"><i class="fa fa-pencil"
                                 aria-hidden="true"></i> Edit</a>

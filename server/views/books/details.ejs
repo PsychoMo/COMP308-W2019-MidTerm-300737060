@@ -7,6 +7,7 @@
           <h1><%= title %></h1>
             <form class="form" method="post">
 
+              <!-- Display add page if title is add a book -->
               <% if(title == "Add a book") { %>
               <div class="form-group">
                 <label for="NameTextField">Title</label>
@@ -28,6 +29,8 @@
                 <input type="text" class="form-control" id="GenreTextField"
                 placeholder="Book Genre" name="genre" required>
               </div>
+
+              <!-- Display add page if title is edit a book -->
               <% } else if (title == "Edit a book") { %>
                 <div class="form-group">
                   <label for="NameTextField">Title</label>
