@@ -1,3 +1,8 @@
+/**File: app.js
+ * Author: Zeyu Ma
+ * StudentID: 300737060
+ * App Name: COMP308-W2019-MidTerm-300737060 */
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();

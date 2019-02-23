@@ -1,4 +1,8 @@
 /* custom JS goes here */
+/**File: app.js
+ * Author: Zeyu Ma
+ * StudentID: 300737060
+ * App Name: COMP308-W2019-MidTerm-300737060 */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){
@@ -106,7 +110,7 @@ $.fn.pageMe = function(opts){
 // IIFE
 (function(){
   $(".btn-danger").click(function(event){
-    if(!confirm("Are you sure?")) {
+    if(!confirm("AREEEEE YOUUUUU SUUUUUUUUUUREEEEEEEEEEEE?????????!!!!!!!!")) {
       event.preventDefault();
       window.location.assign("/books");
     }

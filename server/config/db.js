@@ -1,3 +1,9 @@
+/**File: app.js
+ * Author: Zeyu Ma
+ * StudentID: 300737060
+ * App Name: COMP308-W2019-MidTerm-300737060 */
+
+ // connects to database
 module.exports = {
   //local MongoDB deployment ->
   "URI": "mongodb://localhost/books308"
