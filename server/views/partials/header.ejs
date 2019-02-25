@@ -33,6 +33,12 @@
           <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
         <% } %>
 
+          <!-- Check if a user is logged in -->
+          <!-- Check if displayName is a string -->
+          <!-- Check if displayName exists -->
+          <% if(typeof displayName == 'string' && displayName) { %>
+
+          <!-- Display Booklist only when user is logged in -->
           <% if(title == "books") { %>
           <li class="active"><a href="/books"><i class="fa fa-book fa-lg">
           </i> Books List</a></li>
@@ -41,6 +47,26 @@
             </i> Books List</a></li>
           <% } %>
 
+          <!-- Display displayName and log out button -->
+          <li class="navbar-text">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Welcome, 
+            <%= displayName %>
+          </li>
+          <li class="nav-item">
+            <a href="/logout" class="nav-link">
+              <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a
+            >
+          </li>
+
+          <!-- If not logged in, display login button -->
+          <% } else { %>
+            <li class="nav-item">
+              <a href="/login" class="nav-link">
+                <i class="fa fa-sign-in" aria-hidden="true"></i></i>
+                 Login</a>
+            </li>
+          <% } %>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
   </nav>
